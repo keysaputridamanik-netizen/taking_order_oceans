@@ -9,4 +9,4 @@ if ($m) {
     if ($jumlah > (int)$m['stok']) $jumlah = (int)$m['stok'];
     if (isset($_SESSION['keranjang'][$menu_id])) $_SESSION['keranjang'][$menu_id] = $jumlah;
 }
-header("Location: " . $base_url . "pelanggan/keranjang.php");
+header("Location: " . BASE_URL . "/pelanggan/keranjang.php");
